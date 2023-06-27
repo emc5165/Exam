@@ -32,7 +32,7 @@ See author's corresponding data-set: datasheet.xlsx
 
 Figure 3 was recreated from the paper and code written below:
 
-```{r}
+```{r, fig.width=9.5, fig.height=7}
 
 path <- here::here("Reproduce-Part A")
 
@@ -97,71 +97,6 @@ aplot + bplot + cplot + dplot + plot_annotation(tag_levels = 'a',tag_prefix = "(
 
 ```
 
-````         
-```
-{r, fig.width=9, fig.height=7.5}
-path <- here::here("Reproduce-Part A")
-
-setwd(path)
-
-# Set the file path to get data 
-fname <- "datasheet.xlsx"
-
-# Read the excel worksheet 3
-data <- readxl::read_xlsx(fname, sheet = 3)
-
-# Tidy data for plotting
-tdata <- data |>
-  dplyr::filter(!(longterm_stab=="NA" & yeartoyear_stab=="NA")) |>
-  dplyr::select(Species,longterm_stab,yeartoyear_stab,treatmentext) |>
-  tidyr::pivot_longer(cols=c(longterm_stab,yeartoyear_stab),names_to = "variable") |>
-  dplyr::mutate(variable=case_match(variable,
-                                     "longterm_stab"~"Long-term",
-                                     "yeartoyear_stab"~"Year-to-year"),
-                axistitle=paste(variable,"sp. stability",treatmentext,"(log10)"),
-                value = log10(as.numeric(value)))
-
-# Create separate df's with cols: subplot, x, y
-a <- filter(.data=tdata,all(c("control","fertilized")%in%treatmentext),.by=Species) |>
-  summarise(subplot = "a",
-            x = value[treatmentext=="control" & variable=="Long-term"],
-            xlab = axistitle[treatmentext=="control" & variable=="Long-term"],
-            y = value[treatmentext=="fertilized" & variable=="Long-term"],
-            ylab = axistitle[treatmentext=="fertilized" & variable=="Long-term"],.by = Species)
-
-b <- filter(.data=tdata,all(c("control","fertilized")%in%treatmentext),.by=Species) |>
-  summarise(subplot = "b",
-            x = value[treatmentext=="control" & variable=="Year-to-year"],
-            xlab = axistitle[treatmentext=="control" & variable=="Year-to-year"],
-            y = value[treatmentext=="fertilized" & variable=="Year-to-year"],
-            ylab = axistitle[treatmentext=="fertilized" & variable=="Year-to-year"],.by = Species)
-
-c <- filter(.data=tdata,all(c("Long-term","Year-to-year")%in%variable),.by=Species) |>
-  summarise(subplot = "c",
-            x = value[treatmentext=="control" & variable=="Long-term"],
-            xlab = axistitle[treatmentext=="control" & variable=="Long-term"],
-            y = value[treatmentext=="control" & variable=="Year-to-year"],
-            ylab = axistitle[treatmentext=="control" & variable=="Year-to-year"],.by = Species)
-
-d <- filter(.data=tdata,all(c("Long-term","Year-to-year")%in%variable),.by=Species) |>
-  summarise(subplot = "d",
-            x = value[treatmentext=="fertilized" & variable=="Long-term"],
-            xlab = axistitle[treatmentext=="fertilized" & variable=="Long-term"],
-            y = value[treatmentext=="fertilized" & variable=="Year-to-year"],
-            ylab = axistitle[treatmentext=="fertilized" & variable=="Year-to-year"],.by = Species)
-
-# Reproduce plot
-pfun <- function(z) ggplot(z) + geom_point(aes(x=x,y=y),alpha=0.5) + labs(x=z$xlab, y=z$ylab) + geom_abline(slope=1, intercept=0) + theme_classic() + xlim(range(z$x,z$y)) + ylim(range(z$x,z$y))
-
-aplot <- a |> pfun()
-bplot <- b |> pfun()
-cplot <- c |> pfun()
-dplot <- d |> pfun()
-
-aplot + bplot + cplot + dplot + plot_annotation(tag_levels = 'a',tag_prefix = "(", tag_suffix = ")")
-
-```
-````
 
 2.  Discuss how well you managed to reproduce the part of paper you were working on and what challenges you faced. If you looked at two papers discuss both.
 
@@ -281,8 +216,8 @@ legend("topright", c(" 5-Year Moving Average", " 6-Year Moving Average", " 7-Yea
 abline(trapped.lm, col="black",lwd=2, lty="dashed")
 # next we need to evaluate the autocorrelation using the ACF and PACF
 # Calculate the ACF and PACF
-acf_output <- acf(trapped_lynx, lag.max = 30)
-pacf_output <- pacf(trapped_lynx, lag.max = 30)
+acf_output <- acf(trapped_lynx, lag.max = 30, plot=FALSE)
+pacf_output <- pacf(trapped_lynx, lag.max = 30, plot=FALSE)
 
 # Plot the ACF-- to measure correlation between the ts and corresponding values at different time lags
 plot(acf_output, main = "Lynx ACF")
