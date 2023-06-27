@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.475">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Erin Cafferty">
+
+<title>BioStat II Exam</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="Cafferty_biostatII_exam_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Cafferty_biostatII_exam_files/libs/quarto-html/quarto.js"></script>
+<script src="Cafferty_biostatII_exam_files/libs/quarto-html/popper.min.js"></script>
+<script src="Cafferty_biostatII_exam_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Cafferty_biostatII_exam_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Cafferty_biostatII_exam_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Cafferty_biostatII_exam_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Cafferty_biostatII_exam_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Cafferty_biostatII_exam_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Cafferty_biostatII_exam_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">BioStat II Exam</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Erin Cafferty </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load reaquired packages - ADD CHECK</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>here() starts at /Users/erin.cafferty/University of Bergen_onMac/Biostat II/Exam</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dplyr'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    filter, lag</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(patchwork)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="part-a---reproducibility" class="level2">
+<h2 class="anchored" data-anchor-id="part-a---reproducibility">Part A - reproducibility</h2>
+<ol type="1">
+<li>Continue with your attempt to reproduce part of a paper from archived data from the first practical. Archive the code and text on GitHub and include the link to your repo in your answer here.</li>
+</ol>
+<ul>
+<li><p>Make at least two commits to git.</p></li>
+<li><p>Cite the original paper and data.</p></li>
+<li><p>Make your reproduction as reproducible as possible (i.e.&nbsp;it should be possible for me to reproduce your work after cloning your repo and downloading the data).</p></li>
+</ul>
+<p>Paper used for plot reproduction from DRYAD: “Long-term and year-to-year stability and its drivers in a Mediterranean grassland” Valerio et al.&nbsp;(2022) DOI: 10.1111/1365-2745.13861</p>
+<p>See author’s corresponding data-set: datasheet.xlsx</p>
+<p>Figure 3 was recreated from the paper and code written below:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>path <span class="ot">&lt;-</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"Reproduce-Part A"</span>)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(path)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Set the file path to get data </span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>fname <span class="ot">&lt;-</span> <span class="st">"datasheet.xlsx"</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Read the excel worksheet 3</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">read_xlsx</span>(fname, <span class="at">sheet =</span> <span class="dv">3</span>)</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Tidy data for plotting</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>tdata <span class="ot">&lt;-</span> data <span class="sc">|&gt;</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="sc">!</span>(longterm_stab<span class="sc">==</span><span class="st">"NA"</span> <span class="sc">&amp;</span> yeartoyear_stab<span class="sc">==</span><span class="st">"NA"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(Species,longterm_stab,yeartoyear_stab,treatmentext) <span class="sc">|&gt;</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>  tidyr<span class="sc">::</span><span class="fu">pivot_longer</span>(<span class="at">cols=</span><span class="fu">c</span>(longterm_stab,yeartoyear_stab),<span class="at">names_to =</span> <span class="st">"variable"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">variable=</span><span class="fu">case_match</span>(variable,</span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>                                     <span class="st">"longterm_stab"</span><span class="sc">~</span><span class="st">"Long-term"</span>,</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>                                     <span class="st">"yeartoyear_stab"</span><span class="sc">~</span><span class="st">"Year-to-year"</span>),</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>                <span class="at">axistitle=</span><span class="fu">paste</span>(variable,<span class="st">"sp. stability"</span>,treatmentext,<span class="st">"(log10)"</span>),</span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>                <span class="at">value =</span> <span class="fu">log10</span>(<span class="fu">as.numeric</span>(value)))</span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Create separate df's with cols: subplot, x, y</span></span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">filter</span>(<span class="at">.data=</span>tdata,<span class="fu">all</span>(<span class="fu">c</span>(<span class="st">"control"</span>,<span class="st">"fertilized"</span>)<span class="sc">%in%</span>treatmentext),<span class="at">.by=</span>Species) <span class="sc">|&gt;</span></span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">subplot =</span> <span class="st">"a"</span>,</span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>            <span class="at">x =</span> value[treatmentext<span class="sc">==</span><span class="st">"control"</span> <span class="sc">&amp;</span> variable<span class="sc">==</span><span class="st">"Long-term"</span>],</span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>            <span class="at">xlab =</span> axistitle[treatmentext<span class="sc">==</span><span class="st">"control"</span> <span class="sc">&amp;</span> variable<span class="sc">==</span><span class="st">"Long-term"</span>],</span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>            <span class="at">y =</span> value[treatmentext<span class="sc">==</span><span class="st">"fertilized"</span> <span class="sc">&amp;</span> variable<span class="sc">==</span><span class="st">"Long-term"</span>],</span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>            <span class="at">ylab =</span> axistitle[treatmentext<span class="sc">==</span><span class="st">"fertilized"</span> <span class="sc">&amp;</span> variable<span class="sc">==</span><span class="st">"Long-term"</span>],<span class="at">.by =</span> Species)</span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="fu">filter</span>(<span class="at">.data=</span>tdata,<span class="fu">all</span>(<span class="fu">c</span>(<span class="st">"control"</span>,<span class="st">"fertilized"</span>)<span class="sc">%in%</span>treatmentext),<span class="at">.by=</span>Species) <span class="sc">|&gt;</span></span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">subplot =</span> <span class="st">"b"</span>,</span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>            <span class="at">x =</span> value[treatmentext<span class="sc">==</span><span class="st">"control"</span> <span class="sc">&amp;</span> variable<span class="sc">==</span><span class="st">"Year-to-year"</span>],</span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>            <span class="at">xlab =</span> axistitle[treatmentext<span class="sc">==</span><span class="st">"control"</span> <span class="sc">&amp;</span> variable<span class="sc">==</span><span class="st">"Year-to-year"</span>],</span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>            <span class="at">y =</span> value[treatmentext<span class="sc">==</span><span class="st">"fertilized"</span> <span class="sc">&amp;</span> variable<span class="sc">==</span><span class="st">"Year-to-year"</span>],</span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>            <span class="at">ylab =</span> axistitle[treatmentext<span class="sc">==</span><span class="st">"fertilized"</span> <span class="sc">&amp;</span> variable<span class="sc">==</span><span class="st">"Year-to-year"</span>],<span class="at">.by =</span> Species)</span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a>c <span class="ot">&lt;-</span> <span class="fu">filter</span>(<span class="at">.data=</span>tdata,<span class="fu">all</span>(<span class="fu">c</span>(<span class="st">"Long-term"</span>,<span class="st">"Year-to-year"</span>)<span class="sc">%in%</span>variable),<span class="at">.by=</span>Species) <span class="sc">|&gt;</span></span>
+<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">subplot =</span> <span class="st">"c"</span>,</span>
+<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a>            <span class="at">x =</span> value[treatmentext<span class="sc">==</span><span class="st">"control"</span> <span class="sc">&amp;</span> variable<span class="sc">==</span><span class="st">"Long-term"</span>],</span>
+<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a>            <span class="at">xlab =</span> axistitle[treatmentext<span class="sc">==</span><span class="st">"control"</span> <span class="sc">&amp;</span> variable<span class="sc">==</span><span class="st">"Long-term"</span>],</span>
+<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a>            <span class="at">y =</span> value[treatmentext<span class="sc">==</span><span class="st">"control"</span> <span class="sc">&amp;</span> variable<span class="sc">==</span><span class="st">"Year-to-year"</span>],</span>
+<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a>            <span class="at">ylab =</span> axistitle[treatmentext<span class="sc">==</span><span class="st">"control"</span> <span class="sc">&amp;</span> variable<span class="sc">==</span><span class="st">"Year-to-year"</span>],<span class="at">.by =</span> Species)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Returning more (or less) than 1 row per `summarise()` group was deprecated in
+dplyr 1.1.0.
+ℹ Please use `reframe()` instead.
+ℹ When switching from `summarise()` to `reframe()`, remember that `reframe()`
+  always returns an ungrouped data frame and adjust accordingly.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> <span class="fu">filter</span>(<span class="at">.data=</span>tdata,<span class="fu">all</span>(<span class="fu">c</span>(<span class="st">"Long-term"</span>,<span class="st">"Year-to-year"</span>)<span class="sc">%in%</span>variable),<span class="at">.by=</span>Species) <span class="sc">|&gt;</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">subplot =</span> <span class="st">"d"</span>,</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>            <span class="at">x =</span> value[treatmentext<span class="sc">==</span><span class="st">"fertilized"</span> <span class="sc">&amp;</span> variable<span class="sc">==</span><span class="st">"Long-term"</span>],</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">xlab =</span> axistitle[treatmentext<span class="sc">==</span><span class="st">"fertilized"</span> <span class="sc">&amp;</span> variable<span class="sc">==</span><span class="st">"Long-term"</span>],</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">y =</span> value[treatmentext<span class="sc">==</span><span class="st">"fertilized"</span> <span class="sc">&amp;</span> variable<span class="sc">==</span><span class="st">"Year-to-year"</span>],</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">ylab =</span> axistitle[treatmentext<span class="sc">==</span><span class="st">"fertilized"</span> <span class="sc">&amp;</span> variable<span class="sc">==</span><span class="st">"Year-to-year"</span>],<span class="at">.by =</span> Species)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Returning more (or less) than 1 row per `summarise()` group was deprecated in
+dplyr 1.1.0.
+ℹ Please use `reframe()` instead.
+ℹ When switching from `summarise()` to `reframe()`, remember that `reframe()`
+  always returns an ungrouped data frame and adjust accordingly.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Reproduce plot</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>pfun <span class="ot">&lt;-</span> <span class="cf">function</span>(z) <span class="fu">ggplot</span>(z) <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x=</span>x,<span class="at">y=</span>y),<span class="at">alpha=</span><span class="fl">0.5</span>) <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">x=</span>z<span class="sc">$</span>xlab, <span class="at">y=</span>z<span class="sc">$</span>ylab) <span class="sc">+</span> <span class="fu">geom_abline</span>(<span class="at">slope=</span><span class="dv">1</span>, <span class="at">intercept=</span><span class="dv">0</span>) <span class="sc">+</span> <span class="fu">theme_classic</span>() <span class="sc">+</span> <span class="fu">xlim</span>(<span class="fu">range</span>(z<span class="sc">$</span>x,z<span class="sc">$</span>y)) <span class="sc">+</span> <span class="fu">ylim</span>(<span class="fu">range</span>(z<span class="sc">$</span>x,z<span class="sc">$</span>y))</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>aplot <span class="ot">&lt;-</span> a <span class="sc">|&gt;</span> <span class="fu">pfun</span>()</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>bplot <span class="ot">&lt;-</span> b <span class="sc">|&gt;</span> <span class="fu">pfun</span>()</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>cplot <span class="ot">&lt;-</span> c <span class="sc">|&gt;</span> <span class="fu">pfun</span>()</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>dplot <span class="ot">&lt;-</span> d <span class="sc">|&gt;</span> <span class="fu">pfun</span>()</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>aplot <span class="sc">+</span> bplot <span class="sc">+</span> cplot <span class="sc">+</span> dplot <span class="sc">+</span> <span class="fu">plot_annotation</span>(<span class="at">tag_levels =</span> <span class="st">'a'</span>,<span class="at">tag_prefix =</span> <span class="st">"("</span>, <span class="at">tag_suffix =</span> <span class="st">")"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Cafferty_biostatII_exam_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<pre><code>```
+{r, fig.width=9, fig.height=7.5}
+path &lt;- here::here("Reproduce-Part A")
+
+setwd(path)
+
+# Set the file path to get data 
+fname &lt;- "datasheet.xlsx"
+
+# Read the excel worksheet 3
+data &lt;- readxl::read_xlsx(fname, sheet = 3)
+
+# Tidy data for plotting
+tdata &lt;- data |&gt;
+  dplyr::filter(!(longterm_stab=="NA" &amp; yeartoyear_stab=="NA")) |&gt;
+  dplyr::select(Species,longterm_stab,yeartoyear_stab,treatmentext) |&gt;
+  tidyr::pivot_longer(cols=c(longterm_stab,yeartoyear_stab),names_to = "variable") |&gt;
+  dplyr::mutate(variable=case_match(variable,
+                                     "longterm_stab"~"Long-term",
+                                     "yeartoyear_stab"~"Year-to-year"),
+                axistitle=paste(variable,"sp. stability",treatmentext,"(log10)"),
+                value = log10(as.numeric(value)))
+
+# Create separate df's with cols: subplot, x, y
+a &lt;- filter(.data=tdata,all(c("control","fertilized")%in%treatmentext),.by=Species) |&gt;
+  summarise(subplot = "a",
+            x = value[treatmentext=="control" &amp; variable=="Long-term"],
+            xlab = axistitle[treatmentext=="control" &amp; variable=="Long-term"],
+            y = value[treatmentext=="fertilized" &amp; variable=="Long-term"],
+            ylab = axistitle[treatmentext=="fertilized" &amp; variable=="Long-term"],.by = Species)
+
+b &lt;- filter(.data=tdata,all(c("control","fertilized")%in%treatmentext),.by=Species) |&gt;
+  summarise(subplot = "b",
+            x = value[treatmentext=="control" &amp; variable=="Year-to-year"],
+            xlab = axistitle[treatmentext=="control" &amp; variable=="Year-to-year"],
+            y = value[treatmentext=="fertilized" &amp; variable=="Year-to-year"],
+            ylab = axistitle[treatmentext=="fertilized" &amp; variable=="Year-to-year"],.by = Species)
+
+c &lt;- filter(.data=tdata,all(c("Long-term","Year-to-year")%in%variable),.by=Species) |&gt;
+  summarise(subplot = "c",
+            x = value[treatmentext=="control" &amp; variable=="Long-term"],
+            xlab = axistitle[treatmentext=="control" &amp; variable=="Long-term"],
+            y = value[treatmentext=="control" &amp; variable=="Year-to-year"],
+            ylab = axistitle[treatmentext=="control" &amp; variable=="Year-to-year"],.by = Species)
+
+d &lt;- filter(.data=tdata,all(c("Long-term","Year-to-year")%in%variable),.by=Species) |&gt;
+  summarise(subplot = "d",
+            x = value[treatmentext=="fertilized" &amp; variable=="Long-term"],
+            xlab = axistitle[treatmentext=="fertilized" &amp; variable=="Long-term"],
+            y = value[treatmentext=="fertilized" &amp; variable=="Year-to-year"],
+            ylab = axistitle[treatmentext=="fertilized" &amp; variable=="Year-to-year"],.by = Species)
+
+# Reproduce plot
+pfun &lt;- function(z) ggplot(z) + geom_point(aes(x=x,y=y),alpha=0.5) + labs(x=z$xlab, y=z$ylab) + geom_abline(slope=1, intercept=0) + theme_classic() + xlim(range(z$x,z$y)) + ylim(range(z$x,z$y))
+
+aplot &lt;- a |&gt; pfun()
+bplot &lt;- b |&gt; pfun()
+cplot &lt;- c |&gt; pfun()
+dplot &lt;- d |&gt; pfun()
+
+aplot + bplot + cplot + dplot + plot_annotation(tag_levels = 'a',tag_prefix = "(", tag_suffix = ")")
+
+```</code></pre>
+<ol start="2" type="1">
+<li>Discuss how well you managed to reproduce the part of paper you were working on and what challenges you faced. If you looked at two papers discuss both.</li>
+</ol>
+<p>The data-set I selected was easy to work with. Reading the paper enabled me to understand the names of the abbreviated column titles. It did take time to understand the relationships with the data which translated to challenges in code development to replicate plots. A text file was paired with the excel (.xlsx) file download which further explained in depth what each of the three sheets contained. Luckily there were no issues with obscure packages needed, or outside editing (such as in inkscape or ppt to finalize figures). Further, the readme.txt file stated that there were corresponding R files containing code for each statistical interpretation but I was unable to locate these files on DRYAD.</p>
+<ol start="3" type="1">
+<li>Discuss what how well the original paper meets best practice for reproducibility, i.e.&nbsp;what should the authors have done to make their analysis more reproducible, and what they did well.</li>
+</ol>
+<p>The authors were clear in the methods they used, plots were able to be replicated suggesting that there was no indication of hand-cleaned data. I can only assume that the data-set attached with the paper is true and there was no misconduct (non-zero probability exhibited). Additionally, naming conventions were intuitive and concise yet meaningful. I believe the authors made an well informed documentation of their available open source data. I would be interested to see how they optimized their archived code for an open source environment (if packrat or renv was used as an effort to bring project-local R dependency management to their project in an effort to increase predictability utilizing a private package library).</p>
+</section>
+<section id="part-b-data-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="part-b-data-analysis">Part B data analysis</h2>
+<ol type="1">
+<li><u>A colleague is testing the effect of a treatment on fish growth. They have ten tanks (five for each treatment). Each tank with ten fish. They plan to fit the model: lm(growth ~ treatment, data = fish_data)</u></li>
+</ol>
+<ul>
+<li><p><u>What is wrong with this plan?</u></p></li>
+<li><p>Fish growth can be dependent on the tank effect, whereby creating a dependence of the individual fish. The Gaussian normality should be seen in the distribution of the response variable (growth). Linear models typically assume that the response variable exhibits a Normal (Gaussian) distribution. The Gaussian assumption about normality states that individuals in the sample are independently and identically distributed where each one is a separate entity and not related to the other.</p></li>
+<li><p>The tank effect is consistent with a hidden structure within the data set. Here individuals grouped in each tank show a growth dependency specific to each tank (individuals are NOT independent). This creates a pattern in the data (environmental groupings within the experiment). This violation of independence can lead to a bias in the estimates and falsely make inferences about the population.</p></li>
+<li><p>With mixed effects regression models, we can mathematically account for the structure of the variability in the data and better estimate the actual population mean. mixed effects models are a type of hierarchical model (nested model structure and focuses on means of means) which helps interpret data with grouped observations with one target variable (growth). Here, each tank has its own mean and all tanks together have a population mean where the means are weighted accordingly. This hierarchical structure approach implies that there are several levels of data variability and strengthens the estimation of the standard errors. This is different from a simple linear regression because it takes account for groupings but also treats all of the observations as mutually independent. Further we could employ a Laplace approximation to approximate the posterior distribution of model parameters. This would be dependent on the shape of the distribution and the proximity of the model to the true posterior. Even further, Marcov Chain Monte Carlo techniques may prove to be a better technique. In short a mixed effect model is most appropriate for this problem because of the nested tank effects to more appropriately address correlation among groped fish in tanks, more adequately model the hierarchical structure of the data, and provide a much more reliable statistical inferences.</p></li>
+<li><p><u>Show, by simulation, the problems with this model for these data.</u></p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">9824752</span>)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>A <span class="ot">&lt;-</span> <span class="dv">10</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>B <span class="ot">&lt;-</span> <span class="dv">15</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>sd1 <span class="ot">&lt;-</span> <span class="dv">3</span> <span class="co"># Tank SD</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>sd2 <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="co"># Individual SD within each tank</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Means for each tank</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>tanksA <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">5</span>,A,<span class="at">sd=</span>sd1)</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>tanksB <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">5</span>,B,<span class="at">sd=</span>sd1)</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Individual values within each tank</span></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>indA <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">10</span><span class="sc">*</span><span class="dv">5</span>,<span class="fu">rep</span>(tanksA,<span class="at">each=</span><span class="dv">10</span>),<span class="at">sd=</span>sd2)</span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>indB <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">10</span><span class="sc">*</span><span class="dv">5</span>,<span class="fu">rep</span>(tanksB,<span class="at">each=</span><span class="dv">10</span>),<span class="at">sd=</span>sd2)</span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Combined histogram</span></span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">density</span>(<span class="fu">c</span>(indA,indB)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Cafferty_biostatII_exam_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit model &amp; diagnostics</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>fish_data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">treatment =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"A"</span>,<span class="st">"B"</span>),<span class="at">each=</span><span class="dv">50</span>),</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>                        <span class="at">tank =</span> <span class="fu">rep</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>,<span class="at">each=</span><span class="dv">10</span>),</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>                        <span class="at">growth =</span> <span class="fu">c</span>(indA,indB))</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>fishfit <span class="ot">&lt;-</span> <span class="fu">lm</span>(growth <span class="sc">~</span> treatment, <span class="at">data =</span> fish_data)</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fishfit)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = growth ~ treatment, data = fish_data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.2645 -2.0982 -0.2887  1.7877  6.5010 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  12.3811     0.4007  30.900   &lt;2e-16 ***
+treatmentB    5.6558     0.5666   9.981   &lt;2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 2.833 on 98 degrees of freedom
+Multiple R-squared:  0.5041,    Adjusted R-squared:  0.4991 
+F-statistic: 99.62 on 1 and 98 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qqnorm</span>(<span class="fu">residuals</span>(fishfit))</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">qqline</span>(<span class="fu">residuals</span>(fishfit))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Cafferty_biostatII_exam_files/figure-html/unnamed-chunk-3-2.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<ul>
+<li><u>Suggest a better model and show that it performs better.</u></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Better model: mixed effect lm with fixed effect of treatment and random intercept by tank</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>fishfit2 <span class="ot">&lt;-</span> lme4<span class="sc">::</span><span class="fu">lmer</span>(growth <span class="sc">~</span> treatment <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">|</span> tank), <span class="at">data =</span> fish_data)</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fishfit2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Linear mixed model fit by REML ['lmerMod']
+Formula: growth ~ treatment + (1 | tank)
+   Data: fish_data
+
+REML criterion at convergence: 335.2
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-2.09393 -0.68184  0.04574  0.56155  1.98509 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ tank     (Intercept) 8.407    2.900   
+ Residual             1.164    1.079   
+Number of obs: 100, groups:  tank, 10
+
+Fixed effects:
+            Estimate Std. Error t value
+(Intercept)   12.381      1.306   9.483
+treatmentB     5.656      1.846   3.063
+
+Correlation of Fixed Effects:
+           (Intr)
+treatmentB -0.707</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">qqnorm</span>(<span class="fu">residuals</span>(fishfit2))</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="fu">qqline</span>(<span class="fu">residuals</span>(fishfit2))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Cafferty_biostatII_exam_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<ol start="2" type="1">
+<li><u>You review a paper with the following text.</u></li>
+</ol>
+<blockquote class="blockquote">
+<p>“The effect size was small (r = 0.124). However artificially amplifying the sample by a factor of two (from n = 54 to n = 108) yielded a significant result (p = 0.043) suggesting that a future larger study might be able to detect a positive benefit for [our treatment].”</p>
+</blockquote>
+<p><u>What advice do you give the authors?</u></p>
+<p>The authors should consider how artificially amplifying their sample size and obtaining a significant result could contribute to a Type 1 error inflation. In this process an incorrect rejection of a null hypothesis can occur when it is actually true. Specifically in hypothesis testing, an artificially inflated sample size may increase the statistical power and the likelihood of getting a significant result. This artificially inflated sample may not be the best representation of the actual population (likely introducing bias and inflating the opportunity of a Type 1 error). The author should note that with respect to hypothesis testing, a lower significance level indicates a lower tolerance of Type 1 errors. The author should evaluate the potential for Type 1 error inflation and consider thee need for replication in a naturally recruited experiment to validate the findings (and best reflect the actual population). This will reduce the risk of making false positive conclusions.</p>
+<p>Additionally, there is a risk of incorporating Type II error whereby reducing the statistical power of the study (with increasing the sample size). Here, the null hypothesis is NOT rejected even though it is in act false and the author would fail to detect a true effect.The relationship between the variables/treatment effect is weak based on the effect size being small. Even though the artificially amplified sample size yields significance, it’s still possible that this result is a false negative and fails to accurately reflect a true positive effect.</p>
+<p>The author should not place too much weight of their p value significance based on their small effect size. It’s important to interpret the findings critically and review how the experiment may have failed detection of a positive influence of the treatment due to the small effect size and sample size (and practical application of treatment). The author again should conduct a larger study (without artificially increasing sample size) with proper statistical power to reduce limitations and biases, best reflect the true population, and eliminate the chance of both Type I and Type II error.</p>
+<ol start="3" type="1">
+<li><u>The <code>lynx</code> data (available with-in R) show the number of lynx (norsk: gaupe) trapped in Canada in 1821-1934. Plot the data then examine the acf and pacf for these data. What can you infer from these about the type of autocorrelation in these data?</u></li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a timeseries of the Lynx dataset starting from 1821 and ending in 1934</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(lynx); trapped_lynx <span class="ot">&lt;-</span> lynx</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="co">#we can see that this dataset is a timeseries 'ts'</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(trapped_lynx)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "ts"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co">#checking the dimensions of the timeseries (vector)</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="fu">tsp</span>(trapped_lynx)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1821 1934    1</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co">#check length of dataset (114 values)</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(trapped_lynx)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 114</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co">#plotting a histogram of the data for distribution patterns</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(trapped_lynx)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Cafferty_biostatII_exam_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co">#fit a linear model to see if we get a pattern as a function of time</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>trapped.ts <span class="ot">&lt;-</span> <span class="fu">time</span>(trapped_lynx)</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="co">#fit model </span></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>trapped.lm <span class="ot">&lt;-</span> <span class="fu">lm</span>(trapped_lynx <span class="sc">~</span> trapped.ts)</span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="co"># summarize data</span></span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a><span class="co"># from the summary stats, the model estimates that average trappings increased roughly 3.30 lynx per year</span></span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(trapped.lm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = trapped_lynx ~ trapped.ts)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+ -1594  -1211   -755   1032   5366 
+
+Coefficients:
+             Estimate Std. Error t value Pr(&gt;|t|)
+(Intercept) -4630.034   8493.112  -0.545    0.587
+trapped.ts      3.285      4.523   0.726    0.469
+
+Residual standard error: 1589 on 112 degrees of freedom
+Multiple R-squared:  0.004689,  Adjusted R-squared:  -0.004198 
+F-statistic: 0.5276 on 1 and 112 DF,  p-value: 0.4691</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create a plot that includes moving averages (5-10yr) to see cyclical interactions</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>m_avg10 <span class="ot">&lt;-</span> stats<span class="sc">::</span><span class="fu">filter</span>(<span class="at">x=</span>trapped_lynx, <span class="at">filter=</span><span class="fu">rep</span>(<span class="at">x=</span><span class="dv">1</span><span class="sc">/</span><span class="dv">10</span>,<span class="at">times=</span><span class="dv">10</span>), <span class="at">sides=</span><span class="dv">2</span>)</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>m_avg9  <span class="ot">&lt;-</span> stats<span class="sc">::</span><span class="fu">filter</span>(<span class="at">x=</span>trapped_lynx, <span class="at">filter=</span><span class="fu">rep</span>(<span class="at">x=</span><span class="dv">1</span><span class="sc">/</span><span class="dv">9</span>,<span class="at">times=</span><span class="dv">9</span>), <span class="at">sides=</span><span class="dv">2</span>)</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>m_avg8  <span class="ot">&lt;-</span> stats<span class="sc">::</span><span class="fu">filter</span>(<span class="at">x=</span>trapped_lynx, <span class="at">filter=</span><span class="fu">rep</span>(<span class="at">x=</span><span class="dv">1</span><span class="sc">/</span><span class="dv">8</span>,<span class="at">times=</span><span class="dv">8</span>), <span class="at">sides=</span><span class="dv">2</span>)</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>m_avg7  <span class="ot">&lt;-</span> stats<span class="sc">::</span><span class="fu">filter</span>(<span class="at">x=</span>trapped_lynx, <span class="at">filter=</span><span class="fu">rep</span>(<span class="at">x=</span><span class="dv">1</span><span class="sc">/</span><span class="dv">7</span>,<span class="at">times=</span><span class="dv">7</span>), <span class="at">sides=</span><span class="dv">2</span>)</span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>m_avg6  <span class="ot">&lt;-</span> stats<span class="sc">::</span><span class="fu">filter</span>(<span class="at">x=</span>trapped_lynx, <span class="at">filter=</span><span class="fu">rep</span>(<span class="at">x=</span><span class="dv">1</span><span class="sc">/</span><span class="dv">6</span>,<span class="at">times=</span><span class="dv">6</span>), <span class="at">sides=</span><span class="dv">2</span>)</span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>m_avg5  <span class="ot">&lt;-</span> stats<span class="sc">::</span><span class="fu">filter</span>(<span class="at">x=</span>trapped_lynx, <span class="at">filter=</span><span class="fu">rep</span>(<span class="at">x=</span><span class="dv">1</span><span class="sc">/</span><span class="dv">5</span>,<span class="at">times=</span><span class="dv">5</span>), <span class="at">sides=</span><span class="dv">2</span>)</span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a><span class="co"># visually looking at the moving averages plotted, the natural cycle may be between 8 years long</span></span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(trapped_lynx,<span class="at">col=</span><span class="st">"grey"</span>, <span class="at">ylab =</span> <span class="st">"Number of Lynx Trapped"</span>, <span class="at">xlab =</span> <span class="st">"Year"</span>)</span>
+<span id="cb30-11"><a href="#cb30-11" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(m_avg10,<span class="at">col=</span><span class="st">"red"</span>,<span class="at">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb30-12"><a href="#cb30-12" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(m_avg9,<span class="at">col=</span><span class="st">"orange"</span>,<span class="at">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb30-13"><a href="#cb30-13" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(m_avg8,<span class="at">col=</span><span class="st">"yellow"</span>,<span class="at">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb30-14"><a href="#cb30-14" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(m_avg7,<span class="at">col=</span><span class="st">"green"</span>,<span class="at">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb30-15"><a href="#cb30-15" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(m_avg6,<span class="at">col=</span><span class="st">"blue"</span>,<span class="at">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb30-16"><a href="#cb30-16" aria-hidden="true" tabindex="-1"></a><span class="fu">lines</span>(m_avg5,<span class="at">col=</span><span class="st">"purple"</span>,<span class="at">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb30-17"><a href="#cb30-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-18"><a href="#cb30-18" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">"topright"</span>, <span class="fu">c</span>(<span class="st">" 5-Year Moving Average"</span>, <span class="st">" 6-Year Moving Average"</span>, <span class="st">" 7-Year Moving Average"</span>, </span>
+<span id="cb30-19"><a href="#cb30-19" aria-hidden="true" tabindex="-1"></a>                     <span class="st">"8-Year Moving Average"</span>, <span class="st">" 9-Year Moving Average"</span>, <span class="st">"10-Year Moving Average"</span>), </span>
+<span id="cb30-20"><a href="#cb30-20" aria-hidden="true" tabindex="-1"></a>       <span class="at">bty =</span> <span class="st">"n"</span>, <span class="at">col =</span> <span class="fu">c</span>( <span class="st">"purple"</span>, <span class="st">"blue"</span>, <span class="st">"green"</span>, <span class="st">"yellow"</span>, <span class="st">"orange"</span>, <span class="st">"red"</span>), <span class="at">pch =</span> <span class="dv">15</span>)</span>
+<span id="cb30-21"><a href="#cb30-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-22"><a href="#cb30-22" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(trapped.lm, <span class="at">col=</span><span class="st">"black"</span>,<span class="at">lwd=</span><span class="dv">2</span>, <span class="at">lty=</span><span class="st">"dashed"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Cafferty_biostatII_exam_files/figure-html/unnamed-chunk-5-2.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># next we need to evaluate the autocorrelation using the ACF and PACF</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the ACF and PACF</span></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>acf_output <span class="ot">&lt;-</span> <span class="fu">acf</span>(trapped_lynx, <span class="at">lag.max =</span> <span class="dv">30</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Cafferty_biostatII_exam_files/figure-html/unnamed-chunk-5-3.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>pacf_output <span class="ot">&lt;-</span> <span class="fu">pacf</span>(trapped_lynx, <span class="at">lag.max =</span> <span class="dv">30</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Cafferty_biostatII_exam_files/figure-html/unnamed-chunk-5-4.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the ACF-- to measure correlation between the ts and corresponding values at different time lags</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(acf_output, <span class="at">main =</span> <span class="st">"Lynx ACF"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Cafferty_biostatII_exam_files/figure-html/unnamed-chunk-5-5.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Strong cyclic pattern, repeats every 8 years (repeating on the positive side again)</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Shows us the strength and direction of the linear relationship between the obs and their corresponding lagged values (withOUT removing the effect of the intervening lags-- dependency from last year to current)</span></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="co"># dashed blue line is the significance level</span></span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Exponential decline occurs pointing data to be a first order auto-regressive process</span></span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a><span class="co"># we can see the cyclical patterns in the ACF plot which suggest strong autocorrelation present</span></span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a><span class="co">#this is indicative of the dependency of current year linx population is determinate of the previous year population values</span></span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the PACF</span></span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(pacf_output, <span class="at">main =</span> <span class="st">"Lynx Partial-ACF"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Cafferty_biostatII_exam_files/figure-html/unnamed-chunk-5-6.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co"># removes the dependence from last years values and shows where correlation is the strongest (year-8)</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="co"># supports that lag(8) years in the past is similar to current value (8-year cycle).</span></span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a><span class="co"># focuses on correlation between obs separated by a SPECIFIC lag (whereby eliminating dependency/influence of other </span></span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a><span class="co"># intermediate lags which aids to identify direct influence).</span></span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a><span class="co">#dashed blue line is the significance level</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="4" type="1">
+<li><p><u>Chironomid species richness has been recorded in some Norwegian lakes. Three predictor variables are available, water temperature, depth and pH. We want to test the hypothesis that species richness is related to temperature. The data are in the file chironomid.txt.</u></p>
+<p><u>What distribution could be assumed for the response variable?</u></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>path <span class="ot">&lt;-</span> here<span class="sc">::</span><span class="fu">here</span>()</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(path)</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Set and read file</span></span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>fname <span class="ot">&lt;-</span> <span class="st">"chironomid.txt"</span></span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.table</span>(fname, <span class="at">header =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert it into a dataframe</span></span>
+<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(data)</span>
+<span id="cb36-10"><a href="#cb36-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-11"><a href="#cb36-11" aria-hidden="true" tabindex="-1"></a><span class="do">### What distribution could be assumed for the response variable?</span></span>
+<span id="cb36-12"><a href="#cb36-12" aria-hidden="true" tabindex="-1"></a><span class="co"># First, plot distribution of noSpecies</span></span>
+<span id="cb36-13"><a href="#cb36-13" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">density</span>(data<span class="sc">$</span>noSpecies))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Cafferty_biostatII_exam_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>The Response variable in this study is Species Richness (noSpecies), which corresponds to the count of species. Since we are utilizing count data, Poisson distribution could be assumed for this species richness response variable. Poisson distribution assumes independence which implies that the presence or absence of one species does not influence the presence or absence of another species. This assumption aligns well with ecologic principles where cohabitation of species typically occupy distinct ecological niches to minimize competition but many species exist within the same habitat.</p></li>
+<li><p><u>What type of analysis is appropriate?</u></p>
+<p>An appropriate analysis when working with Poisson Distribution is often the generalized linear models (GLMs) with a poisson link function (to create a Poisson regression model). Here we can model the relationship between a response variable (noSpecies, as count data) and one or more of the explanatory variables (depth, temperature, pH) while accounting for Poisson distribution and assuming a log-linear relationship between both the predictor variables and the expected count. We can further utilize various model diagnostics and hypothesis testing to determine the goodness of fit and further assess the significance of the predictors.</p></li>
+<li><p><u>Fit an appropriate parametric model to test the hypothesis.</u></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>fit1 <span class="ot">&lt;-</span> <span class="fu">glm</span>(noSpecies <span class="sc">~</span> depth <span class="sc">+</span> temperature <span class="sc">+</span> pH, <span class="at">family =</span> <span class="fu">poisson</span>(), data)</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fit1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+glm(formula = noSpecies ~ depth + temperature + pH, family = poisson(), 
+    data = data)
+
+Coefficients:
+             Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept)  2.736714   0.191136  14.318   &lt;2e-16 ***
+depth        0.001959   0.002978   0.658   0.5105    
+temperature  0.059854   0.003465  17.272   &lt;2e-16 ***
+pH          -0.060761   0.026213  -2.318   0.0205 *  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+    Null deviance: 802.65  on 156  degrees of freedom
+Residual deviance: 410.41  on 153  degrees of freedom
+AIC: 1182.1
+
+Number of Fisher Scoring iterations: 4</code></pre>
+</div>
+</div></li>
+<li><p><u>Check the model diagnostics. Justify any changes you need to make to the model.</u></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Heteroscedasticity: Plot residuals vs. fit</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>est1 <span class="ot">&lt;-</span> <span class="fu">fitted</span>(fit1)</span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>res1 <span class="ot">&lt;-</span> <span class="fu">residuals</span>(fit1)</span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(est1, res1, <span class="at">xlab=</span><span class="st">"Fitted Values"</span>, <span class="at">ylab=</span><span class="st">"Residuals"</span>)</span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Cafferty_biostatII_exam_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check normality of residuals  using QQ plot</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a><span class="co">#Here we use the quantile-quantile plot to visually interpret if the distribution of the observed data matches</span></span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a><span class="co">#our expected distribution. More specifically, the QQ plot uses the observed data quantiles against those of the </span></span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a><span class="co">#theoretical distribution. It is optimal that the points lie close to the qqline (representing close conformity to</span></span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a><span class="co">#the expected distribution). Alternatively, where deviations occur, we will need to further investigate for skewness</span></span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a><span class="co">#heavy tails or outliers.</span></span>
+<span id="cb40-7"><a href="#cb40-7" aria-hidden="true" tabindex="-1"></a><span class="fu">qqnorm</span>(res1)</span>
+<span id="cb40-8"><a href="#cb40-8" aria-hidden="true" tabindex="-1"></a><span class="fu">qqline</span>(res1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Cafferty_biostatII_exam_files/figure-html/unnamed-chunk-8-2.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check influence of observations (outliers) </span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Using Cooks distance, we can identify influential observations that may contribute towards a significant impact on the </span></span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a><span class="co">#regression analysis/model's results (and also identify possible outliers).</span></span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">cooks.distance</span>(fit1),<span class="at">type=</span><span class="st">"h"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Cafferty_biostatII_exam_files/figure-html/unnamed-chunk-8-3.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Our Residuals VS Fit are not good, but the normality looks OK. We can see there are some influential points. We will employ an alternative model to see if we can get a better fit and if we see any variation in current pattern.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Model 2: Try identity link in poisson (default is log) </span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Adding the Poisson identity link may help us if there is a strong linear relationship between the predictors vs expected</span></span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a><span class="co"># count. Also when employing the identity link, the coefficients in the GLM represent the change in the expected count as a </span></span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a><span class="co">#1-unit increase (vs log link with coefficients representing multiplicative effects) in predictor variable.</span></span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a>fit2 <span class="ot">&lt;-</span> fit1 <span class="ot">&lt;-</span> <span class="fu">glm</span>(noSpecies <span class="sc">~</span> depth <span class="sc">+</span> temperature <span class="sc">+</span> pH, <span class="at">family =</span> <span class="fu">poisson</span>(<span class="at">link=</span><span class="st">"identity"</span>), data)</span>
+<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fit2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+glm(formula = noSpecies ~ depth + temperature + pH, family = poisson(link = "identity"), 
+    data = data)
+
+Coefficients:
+            Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept) 16.52926    3.78462   4.367 1.26e-05 ***
+depth        0.03069    0.05749   0.534    0.593    
+temperature  1.64932    0.07261  22.715  &lt; 2e-16 ***
+pH          -2.14653    0.51333  -4.182 2.90e-05 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+    Null deviance: 802.65  on 156  degrees of freedom
+Residual deviance: 334.29  on 153  degrees of freedom
+AIC: 1106
+
+Number of Fisher Scoring iterations: 9</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot residuals vs. fit</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>est2 <span class="ot">&lt;-</span> <span class="fu">fitted</span>(fit2)</span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>res2 <span class="ot">&lt;-</span> <span class="fu">residuals</span>(fit2)</span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(est2, res2, <span class="at">xlab=</span><span class="st">"Fitted Values"</span>, <span class="at">ylab=</span><span class="st">"Residuals"</span>)</span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Cafferty_biostatII_exam_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check normality (QQ plot)</span></span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="fu">qqnorm</span>(res2)</span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a><span class="fu">qqline</span>(res2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Cafferty_biostatII_exam_files/figure-html/unnamed-chunk-9-2.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Interpretation: Maybe improvement in residuals VS fit, pattern still seen. Go with fit2 for now (not great, but less bad than fit1). Next step would be to employ a GAMM model which captures non-linearity (understanding of non-linear relationships specifically in temperature data- depth did not have a significant effect). Unfortunately, GAMM models do not capture mechanistic understanding or prediction/extrapolating specifically out of sample prediction. I also tried the quasi-Poisson regression with no increase in fit and I don’t think the negative binomial regression would prove to be a better model either.Since we do not have a magnitude of zeros in our count data, using a zero-inflated Poisson regression is also not useful in understanding excess variability in our count data.</p></li>
+<li><p><u>Predict species richness at -5, 5, and 30°C and show the 95% confidence intervals.</u></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Without values for other potential predictors, assume mean in data</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>pred <span class="ot">&lt;-</span> <span class="fu">predict</span>(fit2,</span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>            <span class="fu">data.frame</span>(<span class="at">temperature=</span><span class="fu">c</span>(<span class="sc">-</span><span class="dv">5</span>,<span class="dv">5</span>,<span class="dv">30</span>), <span class="at">depth=</span><span class="fu">rep</span>(<span class="fu">mean</span>(data<span class="sc">$</span>depth),<span class="dv">3</span>), <span class="at">pH=</span><span class="fu">rep</span>(<span class="fu">mean</span>(data<span class="sc">$</span>pH),<span class="dv">3</span>)),</span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>            <span class="at">se.fit=</span><span class="cn">TRUE</span>)</span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute confidence intervals from SE for each prediction</span></span>
+<span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a>pred <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">temp =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">5</span>,<span class="dv">5</span>,<span class="dv">30</span>),</span>
+<span id="cb46-8"><a href="#cb46-8" aria-hidden="true" tabindex="-1"></a>               <span class="at">spct.pred =</span> pred<span class="sc">$</span>fit,</span>
+<span id="cb46-9"><a href="#cb46-9" aria-hidden="true" tabindex="-1"></a>               <span class="at">spct.l95 =</span> pred<span class="sc">$</span>fit <span class="sc">-</span> pred<span class="sc">$</span>se.fit<span class="sc">*</span><span class="fl">1.96</span>,</span>
+<span id="cb46-10"><a href="#cb46-10" aria-hidden="true" tabindex="-1"></a>               <span class="at">spct.u95 =</span> pred<span class="sc">$</span>fit <span class="sc">+</span> pred<span class="sc">$</span>se.fit<span class="sc">*</span><span class="fl">1.96</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+<li><p><u>Present the results using both graphs and tables.</u></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="do">### Present the results using both graphs and tables.</span></span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(pred,<span class="fu">aes</span>(<span class="at">x=</span>temp,<span class="at">y=</span>spct.pred)) <span class="sc">+</span></span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data=</span>data,<span class="fu">aes</span>(<span class="at">x=</span>temperature,<span class="at">y=</span>noSpecies),<span class="at">colour=</span><span class="st">"grey"</span>,<span class="at">alpha=</span><span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_pointrange</span>(<span class="fu">aes</span>(<span class="at">ymin=</span>spct.l95,<span class="at">ymax=</span>spct.u95),<span class="at">size=</span><span class="fl">0.3</span>) <span class="sc">+</span></span>
+<span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Temperature (C)"</span>) <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">"Predicted species count"</span>) <span class="sc">+</span></span>
+<span id="cb47-6"><a href="#cb47-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_test</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Cafferty_biostatII_exam_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(pred,<span class="at">col.names =</span> <span class="fu">c</span>(<span class="st">"Temperaturee (C)"</span>,<span class="st">"Predicted species count"</span>,<span class="st">"Lower 95% CI species count"</span>,<span class="st">"Upper 95% CI species count"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="table table-sm table-striped">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 25%">
+<col style="width: 28%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Temperaturee (C)</th>
+<th style="text-align: right;">Predicted species count</th>
+<th style="text-align: right;">Lower 95% CI species count</th>
+<th style="text-align: right;">Upper 95% CI species count</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">-5</td>
+<td style="text-align: right;">-5.192134</td>
+<td style="text-align: right;">-7.519161</td>
+<td style="text-align: right;">-2.865108</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">11.301104</td>
+<td style="text-align: right;">10.237545</td>
+<td style="text-align: right;">12.364664</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">52.534201</td>
+<td style="text-align: right;">49.680524</td>
+<td style="text-align: right;">55.387878</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div></li>
+<li><p><u>Write a biological interpretation of your model.</u></p>
+<p>A positive relationship is observed between species richness (noSpecies) and temperature. Reading Lencioni et al.&nbsp;2010 ‘Chironomid (Diptera: Chironomidae) communities in six European glacier-fed streams’ states that there was a prominent difference in taxonomic richness between the Alpine and the northern European regions, with a higher number of taxa in the south (where warmer water temperatures persist). Warmer temperatures may contribute to the expansion of habitat suitability and lead to increases in species richness. Enhancement in the metabolic rates and raster development maybe observed with warmer temperatures which may contribute to increased species richness by means of development/reproduction rate increase changing life-cycle duration and promote species overlap. Shifts in species distributions with higher water temperatures can lead to spatio-temporal shifts in species richness. As cooler environments warm, more temperate climate species may be seen in arctic environments as those habitats become more survivable. https://doi.org/10.1046/j.1365-2427.2001.00859.x</p></li>
+</ol>
+</section>
+<section id="instructions" class="level2">
+<h2 class="anchored" data-anchor-id="instructions">Instructions</h2>
+<p>Write in a quarto document and submit the rendered version. Make sure that any figures are included in you submission.</p>
+<p>Upload your answer to mitt.uib</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
