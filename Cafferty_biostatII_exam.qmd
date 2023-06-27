@@ -2,6 +2,7 @@
 title: "BioStat II Exam"
 author: "Erin Cafferty"
 format: html
+# pdf: default
 editor: visual
 ---
 
@@ -96,7 +97,6 @@ aplot + bplot + cplot + dplot + plot_annotation(tag_levels = 'a',tag_prefix = "(
 
 
 ```
-
 
 2.  Discuss how well you managed to reproduce the part of paper you were working on and what challenges you faced. If you looked at two papers discuss both.
 
