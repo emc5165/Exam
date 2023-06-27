@@ -17,6 +17,8 @@ library(ggplot2)
 library(patchwork)
 ```
 
+Github repository: https://github.com/emc5165/Exam
+
 ## Part A - reproducibility
 
 1.  Continue with your attempt to reproduce part of a paper from archived data from the first practical. Archive the code and text on GitHub and include the link to your repo in your answer here.
@@ -351,4 +353,6 @@ plot(pacf_output, main = "Lynx Partial-ACF")
 
 Write in a quarto document and submit the rendered version. Make sure that any figures are included in you submission.
 
-Upload your answer to mitt.uib
+Github repository: https://github.com/emc5165/Exam
+
+also see upload on mitt.uib
